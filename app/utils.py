@@ -74,5 +74,5 @@ def prepare_data(operation: dict) -> str:
 
 
 def get_user_dats(operations: list[dict]) -> None:
-    for operation in operations:
+    for operation in operations[:5]:
         print(f'{prepare_data(operation)}\n')
